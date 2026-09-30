@@ -1,0 +1,26 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Despensa Coreana — búscalo por número</title><style>
+:root{--bg:#f7f5f0;--fg:#1b1b1b;--muted:#666;--card:#fff;--acc:#c8553d;--line:#e4e0d8}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#f1f1f1;--muted:#aaa;--card:#1e1e1e;--line:#333}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:16px}h1{font-size:22px;margin:8px 0 4px}.sub{color:var(--muted);font-size:15px;margin:0 0 12px}
+.notice{font-size:13px;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:14px}
+.find input{width:100%;font-size:20px;padding:12px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);margin-bottom:14px}
+ul{list-style:none;margin:0;padding:0}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
+.card.hit{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc)}.top{display:flex;align-items:center;gap:12px}
+.no{min-width:48px;height:48px;border-radius:10px;background:var(--acc);color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center}
+.th{width:64px;height:36px;object-fit:cover;border-radius:6px;background:var(--line)}.name{flex:1;font-weight:600}
+.f{margin:10px 0 0;font-size:15px;color:var(--muted)}.vs{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.v{font-size:13px;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:3px 10px;text-decoration:none}
+.act{margin-top:10px;text-align:right}.btn{display:inline-block;background:var(--fg);color:var(--bg);text-decoration:none;padding:10px 14px;border-radius:10px;font-size:15px}
+.empty{color:var(--muted);text-align:center;padding:20px}
+</style></head><body><main><h1>Productos de los Shorts, por número</h1><p class="sub">Utensilios y productos de cocina coreana de los Shorts de Despensa Coreana. Escribe el <b>número</b> del video para encontrarlo.</p><div class="notice">Enlaces de afiliado de AliExpress: puedo recibir una comisión por las compras, sin costo extra para ti. Los productos pueden ser distintos a los del video. El precio y el envío los fija AliExpress y pueden cambiar.</div>
+<div class="find"><input id="q" inputmode="numeric" placeholder="Escribe el número (ej. 1)" aria-label="Escribe el número (ej. 1)"></div>
+<ul id="list"><li class="card" data-no="3"><div class="top"><span class="no">3</span><img class="th" loading="lazy" alt="" src="https://i.ytimg.com/vi/8RGeG0ujfKE/mqdefault.jpg" onerror="this.remove()"><span class="name">Bol de vidrio hondo para mezclar</span></div><p class="f">Un bol de vidrio como el del video para mezclar el atún.</p><div class="vs"><a class="v" href="https://www.youtube.com/shorts/8RGeG0ujfKE" target="_blank" rel="noopener">Video 1</a></div><div class="act"><a class="btn" href="https://s.click.aliexpress.com/e/_c3rxY9fx" target="_blank" rel="sponsored nofollow noopener">Ver en AliExpress</a></div></li>
+<li class="card" data-no="2"><div class="top"><span class="no">2</span><img class="th" loading="lazy" alt="" src="https://i.ytimg.com/vi/8RGeG0ujfKE/mqdefault.jpg" onerror="this.remove()"><span class="name">Prensa de ajos de acero inoxidable</span></div><p class="f">Para la cucharada de ajo picado de la receta.</p><div class="vs"><a class="v" href="https://www.youtube.com/shorts/8RGeG0ujfKE" target="_blank" rel="noopener">Video 1</a></div><div class="act"><a class="btn" href="https://s.click.aliexpress.com/e/_c3gzM6nX" target="_blank" rel="sponsored nofollow noopener">Ver en AliExpress</a></div></li>
+<li class="card" data-no="1"><div class="top"><span class="no">1</span><img class="th" loading="lazy" alt="" src="https://i.ytimg.com/vi/8RGeG0ujfKE/mqdefault.jpg" onerror="this.remove()"><span class="name">Juego coreano de cuchara y palillos (acero inoxidable 304)</span></div><p class="f">La cuchara y los palillos de metal que se usan en Corea.</p><div class="vs"><a class="v" href="https://www.youtube.com/shorts/8RGeG0ujfKE" target="_blank" rel="noopener">Video 1</a></div><div class="act"><a class="btn" href="https://s.click.aliexpress.com/e/_c4amJrKp" target="_blank" rel="sponsored nofollow noopener">Ver en AliExpress</a></div></li></ul><p class="empty" id="empty" hidden>Todavía no hay un producto con ese número.</p></main><script>
+(function(){var cards=[].slice.call(document.querySelectorAll('.card')),q=document.getElementById('q'),e=document.getElementById('empty');
+function go(v){v=(v||'').replace(/[^0-9]/g,'');var hit=null;cards.forEach(function(c){var m=!v||c.dataset.no===v;c.hidden=!m;c.classList.toggle('hit',!!v&&m);if(v&&m)hit=c;});e.hidden=!(v&&!hit);}
+q.addEventListener('input',function(){go(q.value);});var h=(location.hash||'').replace('#','');if(h){q.value=h;}go(h);})();
+</script></body></html>
